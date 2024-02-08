@@ -47,6 +47,12 @@ footer {
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .titulo {
     color: white;
     font-size: 48px;
@@ -65,8 +71,9 @@ footer {
 
 .personagens {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 3rem;
     max-width: 1357px;
 }
 

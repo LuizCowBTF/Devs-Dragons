@@ -1,61 +1,12 @@
 import { Personagem } from "../../modules/personagem.js";
+import { PersonagemView } from "../../components/personagem-view.js";
+import { Mago } from "../../modules/mago.js";
 
-/*
-const personagemPedrinho = {
-    nome: 'Pedrinho',
-    vida: 7,
-    mana: 12,
-    level: 5,
-    tipo: 'Mago',
-}
+const personagemPedrinho = new Personagem('Pedrinho', 13, 'Mago', '')
+const personagemJose = new Personagem('José', 10, 'Arqueiro', '')
 
-const personagemJose = {
-    nome: 'Jose',
-    vida: 7,
-    mana: 6,
-    level: 3,
-    tipo: 'Arqueiro',
-}
+const personagens = [personagemJose, personagemPedrinho]
 
-const personagemAna = {
-  nome: 'Ana',
-  vida: 7,
-  mana: 10,
-  level: 5,
-  tipo: 'Maga',
-}
-*/
+console.log(new Mago('Gelo', 7, 9))
 
-
-
-const personagemPedrinho = new Personagem();
-personagemPedrinho.nome = 'Pedrinho'
-personagemPedrinho.vida = 12
-personagemPedrinho.mana = 12
-personagemPedrinho.level = 5
-personagemPedrinho.tipo = 'Mago'
-personagemPedrinho.descricao = ''
-
-
-const personagemJose = new Personagem();
-personagemJose.nome = 'José'
-personagemJose.vida = 10
-personagemJose.mana = 10
-personagemJose.level = 4
-personagemJose.tipo = 'Arqueiro'
-personagemJose.descricao = ''
-
-
-const personagemPatalogica = new Personagem();
-personagemPatalogica.nome = 'Ana'
-personagemPatalogica.vida = 15
-personagemPatalogica.mana = 15
-personagemPatalogica.level = 7
-personagemPatalogica.tipo = 'Maga'
-personagemPatalogica.descricao = ''
-
-
-console.log('Insignia de ' + personagemPedrinho.nome + ': ' + personagemPedrinho.obterInsignia());
-console.log('Insignia de ' + personagemJose.nome + ': ' + personagemJose.obterInsignia());
-console.log('Insignia de ' + personagemPatalogica.nome + ': ' + personagemPatalogica.obterInsignia());
-
+new PersonagemView(personagens).render()
