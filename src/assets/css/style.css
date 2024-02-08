@@ -7,6 +7,9 @@
 
 body {
     font-family: var(--fonte-textos);
+    text-transform: uppercase;
+    color: #00CCFF;
+    text-align: center;
     background-image: url(../img/fundo-madeira.png);
     height: 100vh;
 }
@@ -23,6 +26,25 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 1357px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #B28601;
+  border-radius: 10px;
+  bottom: 0;
+  text-transform: uppercase;
+  color: #00CCFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 20px;
+
+  img {
+    padding: 15px 0;
+  }
 }
 
 .titulo {
